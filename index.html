@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body id=" body">
-    
-<div class=" text-center mt-10"> 
+<body>
+ <div class=" bg-[#FF7235] sm:flex justify-around  text-4xl  pb-6 sm:py-8 text-white "> 
+        <h1 class="text-6xl "><span class=" text-black">TECH</span>Bookie</h1>
 
-<h1 id="tasbih" class=" text-9xl">0</h1>
-<button id="btn1" class=" bg-blue-800 text-white w-[200px] h-[80px] py-5 text-4xl mx-8 px-4"> increment </button>
-<button id="btn2" class=" bg-blue-800 text-white w-[100px] h-[80px] py-5  text-4xl rounded-full px-2"> reset </button>
-
+        <i id="menuButton" class="fa-solid fa-bars text-4xl absolute right-4 top-4 first-letter: sm:hidden"></i>
+        <i id="closeButton" class="fa-solid fa-xmark absolute right-4 top-4 first-letter: sm:hidden hidden"></i>
+    <ul id="links" class=" sm:flex hidden flex-col sm:flex-row gap-9 mt-7 ml-7 ">
+        <li> home </li>
+        <li> pricing </li>
+        <li> About us </li>
+    </ul>
+    <div id="buttons" class=" sm:flex hidden sm:flex-row flex-col sm:gap-10 mt-7 ml-7">
+        <button class=" "> Login </button>
+        <br>
+        <button class=" bg-white  text-[#FF7235] px-5 text-center"> Rigister </button>
+    </div>
 </div>
+  
+
+
 
     <script src="index.js">   </script>
 
